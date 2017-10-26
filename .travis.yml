@@ -29,24 +29,24 @@ matrix:
   include:
 
     # default builds for MacOS
-    - os: osx
-      language: generic
-      osx_image: xcode8.3
-      env:
-        - MB_PYTHON_VERSION=2.7
-        - ENABLE_CONTRIB=0
-    - os: osx
-      language: generic
-      osx_image: xcode8.3
-      env:
-        - MB_PYTHON_VERSION=3.4
-        - ENABLE_CONTRIB=0
-    - os: osx
-      language: generic
-      osx_image: xcode8.3
-      env:
-        - MB_PYTHON_VERSION=3.5
-        - ENABLE_CONTRIB=0
+    # - os: osx
+    #   language: generic
+    #   osx_image: xcode8.3
+    #   env:
+    #     - MB_PYTHON_VERSION=2.7
+    #     - ENABLE_CONTRIB=0
+    # - os: osx
+    #   language: generic
+    #   osx_image: xcode8.3
+    #   env:
+    #     - MB_PYTHON_VERSION=3.4
+    #     - ENABLE_CONTRIB=0
+    # - os: osx
+    #   language: generic
+    #   osx_image: xcode8.3
+    #   env:
+    #     - MB_PYTHON_VERSION=3.5
+    #     - ENABLE_CONTRIB=0
     - os: osx
       language: generic
       osx_image: xcode8.3
@@ -55,147 +55,147 @@ matrix:
         - ENABLE_CONTRIB=0
 
     # Contrib builds for MacOS
-    - os: osx
-      language: generic
-      osx_image: xcode8.3
-      env:
-        - MB_PYTHON_VERSION=2.7
-        - ENABLE_CONTRIB=1
-    - os: osx
-      language: generic
-      osx_image: xcode8.3
-      env:
-        - MB_PYTHON_VERSION=3.4
-        - ENABLE_CONTRIB=1
-    - os: osx
-      language: generic
-      osx_image: xcode8.3
-      env:
-        - MB_PYTHON_VERSION=3.5
-        - ENABLE_CONTRIB=1
-    - os: osx
-      language: generic
-      osx_image: xcode8.3
-      env:
-        - MB_PYTHON_VERSION=3.6
-        - ENABLE_CONTRIB=1
+    # - os: osx
+    #   language: generic
+    #   osx_image: xcode8.3
+    #   env:
+    #     - MB_PYTHON_VERSION=2.7
+    #     - ENABLE_CONTRIB=1
+    # - os: osx
+    #   language: generic
+    #   osx_image: xcode8.3
+    #   env:
+    #     - MB_PYTHON_VERSION=3.4
+    #     - ENABLE_CONTRIB=1
+    # - os: osx
+    #   language: generic
+    #   osx_image: xcode8.3
+    #   env:
+    #     - MB_PYTHON_VERSION=3.5
+    #     - ENABLE_CONTRIB=1
+    # - os: osx
+    #   language: generic
+    #   osx_image: xcode8.3
+    #   env:
+    #     - MB_PYTHON_VERSION=3.6
+    #     - ENABLE_CONTRIB=1
 
     # default builds for Linux
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=2.7
-        - ENABLE_CONTRIB=0
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=2.7
-        - UNICODE_WIDTH=16
-        - ENABLE_CONTRIB=0
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=2.7
-        - PLAT=i686
-        - ENABLE_CONTRIB=0
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=2.7
-        - PLAT=i686
-        - UNICODE_WIDTH=16
-        - ENABLE_CONTRIB=0
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=3.4
-        - ENABLE_CONTRIB=0
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=3.4
-        - PLAT=i686
-        - ENABLE_CONTRIB=0
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=3.5
-        - ENABLE_CONTRIB=0
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=3.5
-        - PLAT=i686
-        - ENABLE_CONTRIB=0
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=3.6
-        - ENABLE_CONTRIB=0
-        - BUILD_DEPENDS=numpy==1.11.3
-        - TEST_DEPENDS=numpy==1.11.3
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=3.6
-        - PLAT=i686
-        - ENABLE_CONTRIB=0
-        - BUILD_DEPENDS=numpy==1.11.3
-        - TEST_DEPENDS=numpy==1.11.3
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=2.7
+    #     - ENABLE_CONTRIB=0
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=2.7
+    #     - UNICODE_WIDTH=16
+    #     - ENABLE_CONTRIB=0
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=2.7
+    #     - PLAT=i686
+    #     - ENABLE_CONTRIB=0
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=2.7
+    #     - PLAT=i686
+    #     - UNICODE_WIDTH=16
+    #     - ENABLE_CONTRIB=0
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=3.4
+    #     - ENABLE_CONTRIB=0
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=3.4
+    #     - PLAT=i686
+    #     - ENABLE_CONTRIB=0
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=3.5
+    #     - ENABLE_CONTRIB=0
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=3.5
+    #     - PLAT=i686
+    #     - ENABLE_CONTRIB=0
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=3.6
+    #     - ENABLE_CONTRIB=0
+    #     - BUILD_DEPENDS=numpy==1.11.3
+    #     - TEST_DEPENDS=numpy==1.11.3
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=3.6
+    #     - PLAT=i686
+    #     - ENABLE_CONTRIB=0
+    #     - BUILD_DEPENDS=numpy==1.11.3
+    #     - TEST_DEPENDS=numpy==1.11.3
 
     # contrib builds for Linux
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=2.7
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=2.7
 
-        - ENABLE_CONTRIB=1
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=2.7
+    #     - ENABLE_CONTRIB=1
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=2.7
 
-        - UNICODE_WIDTH=16
-        - ENABLE_CONTRIB=1
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=2.7
+    #     - UNICODE_WIDTH=16
+    #     - ENABLE_CONTRIB=1
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=2.7
 
-        - PLAT=i686
-        - ENABLE_CONTRIB=1
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=2.7
+    #     - PLAT=i686
+    #     - ENABLE_CONTRIB=1
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=2.7
 
-        - PLAT=i686
-        - UNICODE_WIDTH=16
-        - ENABLE_CONTRIB=1
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=3.4
+    #     - PLAT=i686
+    #     - UNICODE_WIDTH=16
+    #     - ENABLE_CONTRIB=1
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=3.4
 
-        - ENABLE_CONTRIB=1
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=3.4
+    #     - ENABLE_CONTRIB=1
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=3.4
 
-        - PLAT=i686
-        - ENABLE_CONTRIB=1
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=3.5
+    #     - PLAT=i686
+    #     - ENABLE_CONTRIB=1
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=3.5
 
-        - ENABLE_CONTRIB=1
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=3.5
+    #     - ENABLE_CONTRIB=1
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=3.5
 
-        - PLAT=i686
-        - ENABLE_CONTRIB=1
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=3.6
+    #     - PLAT=i686
+    #     - ENABLE_CONTRIB=1
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=3.6
 
-        - BUILD_DEPENDS=numpy==1.11.3
-        - TEST_DEPENDS=numpy==1.11.3
-        - ENABLE_CONTRIB=1
+    #     - BUILD_DEPENDS=numpy==1.11.3
+    #     - TEST_DEPENDS=numpy==1.11.3
+    #     - ENABLE_CONTRIB=1
 
-    - os: linux
-      env:
-        - MB_PYTHON_VERSION=3.6
+    # - os: linux
+    #   env:
+    #     - MB_PYTHON_VERSION=3.6
 
-        - PLAT=i686
-        - BUILD_DEPENDS=numpy==1.11.3
-        - TEST_DEPENDS=numpy==1.11.3
-        - ENABLE_CONTRIB=1
+    #     - PLAT=i686
+    #     - BUILD_DEPENDS=numpy==1.11.3
+    #     - TEST_DEPENDS=numpy==1.11.3
+    #     - ENABLE_CONTRIB=1
 
 before_install:
     - echo $ENABLE_CONTRIB > contrib.enabled
